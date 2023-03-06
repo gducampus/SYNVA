@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>3d models</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+    <a-assets>
+        <img src="images/ground.jpg" id="ground">
+        <img src="images/clear-sunny-sky.jpg" id="sky">
+        <a-asset-item id="castle" src="images/castle/scene.gltf"></a-asset-item>
+        <a-asset-item id="bird" src="images/bird/scene.gltf"></a-asset-item>
+    </a-assets>
+    <a-plane material="color:#ffffff; src:#ground; repeat:1000 1000" position="0 0 -4" rotation="-90 0 0" width="1000" height="1000"></a-plane>
+    <a-sky src="#sky"></a-sky>
+    <a-entity gltf-model="#castle" position="0 0.2 0"></a-entity>
+    <a-gltf-model ></a-gltf-model>
+    <a-gltf-model src="#bird"></a-gltf-model>
+</a-scene>
+
+</body>
+</html>
