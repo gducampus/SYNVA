@@ -18,7 +18,14 @@
     <a-sky src="#sky"></a-sky>
     <a-entity gltf-model="#castle" position="0 0.2 0"></a-entity>
     <a-gltf-model ></a-gltf-model>
-    <a-gltf-model src="#bird" scale="0.02 0.02 0.02" animation-mixer></a-gltf-model>
+    <a-entity position="0 2 -6"
+              animation="property:rotation;
+                        to: 0 360 0;
+                        loop: true;
+                        dur:5000">
+        <a-gltf-model src="#bird" scale="0.02 0.02 0.02" animation-mixer></a-gltf-model>
+    </a-entity>
+
 </a-scene>
 
 </body>
