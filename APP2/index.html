@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Intégrer les modèles 3d</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="bird" src="models/phoenix/scene.gltf"></a-asset-item>
+            <a-asset-item id="castle" src="models/castle/scene.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-gltf-model src="#bird" scale="0.01 0.01 0.01" animation-mixer></a-gltf-model>
+        <a-gltf-model src="#castle" ></a-gltf-model>
+
+    </a-scene>
+
+</body>
+</html>
